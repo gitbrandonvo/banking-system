@@ -150,15 +150,15 @@ class SavingsAccount extends Account {
 
 //Client code:
 
-const bank = new Bank();
-bank.addAccount(new CheckingAccount("Brandon Vo", "A001", 1000, 300));
-bank.addAccount(new CheckingAccount("Aliah Hope", "A002", 1500, 300));
-bank.addAccount(new SavingsAccount("Jered Smith", "A003", 3000));
-console.log(bank.accountsList[0].accountType);
-bank.withdraw("A001", 200);
-bank.withdraw("A001", 10000); //unsuccessful
-bank.deposit("A001", 300);
-bank.transfer("A002", "A003", 5000); //unsuccessful
-bank.transfer("A002", "A003", 500);
-bank.withdraw("A003", bank.calculateInterest("A003", 5)); //withdraw based on given account number & interest rate 
-bank.displayAccounts();
+// const bank = new Bank();
+// bank.addAccount(new CheckingAccount("Brandon Vo", "A001", 1000, 300));
+// bank.addAccount(new CheckingAccount("Aliah Hope", "A002", 1500, 300));
+// bank.addAccount(new SavingsAccount("Jered Smith", "A003", 3000));
+// console.log(bank.accountsList[0].accountType);
+// bank.withdraw("A001", 200);
+// bank.withdraw("A001", 10000); //expected: unsuccessful
+// bank.deposit("A001", 300);
+// bank.transfer("A002", "A003", 5000); //expected: unsuccessful
+// bank.transfer("A002", "A003", 500);
+// bank.withdraw("A003", bank.calculateInterest("A003", 5)); //withdraw based on given account number & interest rate 
+// bank.displayAccounts();

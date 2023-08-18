@@ -41,13 +41,13 @@ Create a banking system that handles different types of accounts, transactions, 
 
 ## Challenges and Considerations
 
-- Handles cases like insufficient balance and invalid account numbers
-- Fund transfers between accounts
+- Handles cases like insufficient balance and invalid account numbers.
+- Fund transfers between accounts.
 
-## Usage Methods
+## Methods to run
 
-1. Open file directly in Github, copy contents, and paste into developer tools console (Shortcut: F12 on most browsers)
-2. Clone this repository, open in a supported development environment, and run the code.
+1. Open file directly in Github, copy contents, and enter contents into developer tools console (Shortcut: F12 on most browsers).
+2. Clone this repository, open in a supported development environment, and run `banking-system.js`
 
 ### Basic Usage
 

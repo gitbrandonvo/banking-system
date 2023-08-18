@@ -20,7 +20,7 @@ Create a banking system that handles different types of accounts, transactions, 
 
 ### Account Classes
 
-- The `Account` class serves as the base class, featuring properties like `accountNumber`, `accountHolder`, and `balance`.
+- The `Account` class serves as the base class with properties like `accountNumber`, `accountHolder`, and `balance`.
 - Derived classes include `CheckingAccount` and `SavingsAccount`, each inheriting from `Account`.
 - `CheckingAccount` introduces an additional property, `overdraftLimit`.
 
@@ -65,6 +65,10 @@ bank.addAccount(savingsAccount);
 bank.deposit("A001", 300);
 bank.withdraw("A001", 200);
 bank.transfer("A002", "A003", 500);
+
+//Calculate interest
+bank.calculateInterest("A003", 5)
+
 // Display account details
 bank.displayAccounts();
 ```
@@ -76,19 +80,21 @@ bank.displayAccounts();
 const bank = new Bank();
 
 // Create account instances
-const checkingAccount = new CheckingAccount("Brandon Vo", "A001", 1000, 300));
-const checkingAccount2 = new CheckingAccount("Aliah Hope", "A002", 1500, 300));
+const checkingAccount = new CheckingAccount("Aliah Hope", "A002", 1500, 300));
 const savingsAccount = new SavingsAccount("Jered Smith", "A003", 3000);
 
 // Add accounts to the bank
+bank.addAccount(new CheckingAccount("Brandon Vo", "A001", 1000, 300));
 bank.addAccount(checkingAccount);
 bank.addAccount(savingsAccount);
 
 // Perform transactions using the bank
 bank.deposit("A001", 300);
 bank.withdraw("A001", 200);
+bank.withdraw("A003", 
 bank.transfer("A002", "A003", 500);
-
+//withdraw based on given account number & interest rate 
+bank.withdraw("A003", bank.calculateInterest("A003", 5)); 
 // Display account details after transactions
 bank.displayAccounts();
 ```

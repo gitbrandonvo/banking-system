@@ -66,7 +66,7 @@ bank.deposit("A001", 300);
 bank.withdraw("A001", 200);
 bank.transfer("A002", "A003", 500);
 
-//Calculate interest
+// Calculate interest
 bank.calculateInterest("A003", 5);
 
 // Display account details
@@ -94,7 +94,7 @@ bank.withdraw("A001", 200);
 bank.withdraw("A003", 
 bank.transfer("A002", "A003", 500);
 
-//withdraw based on given account number & interest rate 
+// Withdraw based on given account number & interest rate 
 bank.withdraw("A003", bank.calculateInterest("A003", 5));
 
 // Display account details after transactions

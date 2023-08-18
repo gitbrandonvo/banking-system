@@ -1,6 +1,6 @@
 # Banking System Exercise
 
-Welcome! This was practice creating a Banking System in Javascript! This project simulates a basic banking system that handles different types of accounts, transactions, and interest calculations.
+Welcome! This was practice creating a Banking System in Javascript! This project simulates a basic banking system that handles different types of accounts, transactions, and interest calculations. The end of this readme contains my reflections.
 
 ### Requirements
 Create a banking system that handles different types of accounts, transactions, and interest calculations. Implement the following features:
@@ -93,6 +93,7 @@ bank.deposit("A001", 300);
 bank.withdraw("A001", 200);
 bank.withdraw("A003", 
 bank.transfer("A002", "A003", 500);
+
 //withdraw based on given account number & interest rate 
 bank.withdraw("A003", bank.calculateInterest("A003", 5));
 

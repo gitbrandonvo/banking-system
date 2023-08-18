@@ -1,4 +1,4 @@
-# Banking System Exercise
+# Banking System
 
 Welcome! This was practice creating a Banking System in Javascript! This project simulates a basic banking system that handles different types of accounts, transactions, and interest calculations. The end of this readme contains my reflections.
 
@@ -104,7 +104,7 @@ bank.displayAccounts();
 ## My Reflections
 
 The banking system meets requirements and works as expected. While requirements were the focus, post review, I see that there are definite improvements can be made.
-- This project mainly focused on backend logic.. a natural progression could involve creating a user interface to interact with the system.
+- This project mainly focused on backend logic and meeting requirements.. a natural progression could involve creating a user interface to interact with the system.
 - Refining conditional logic: refining logic and adding validation for acceptable deposits, withdraws, overdraft limits, transfers, edge cases, etc.
 - Data persistence could be implemented through something like a database or file system. 
 - Address data integrity: can be addressed using a RDMS (ex. transactions).
